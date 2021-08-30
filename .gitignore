@@ -10,10 +10,11 @@
 *.userosscache
 *.sln.docstates
 
-# JSG
+# JSG - CUSTOM
 appsettings.json
 launchsettings.json
 *.DS_Store
+launch.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
