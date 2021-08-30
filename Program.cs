@@ -15,16 +15,20 @@ namespace SleepData
 
             if (resp == "1")
             {
+                // create data file
+
+                 // ask a question
+                Console.WriteLine("How many weeks of data is needed?");
                 // input the response (convert to int)
                 int weeks = int.Parse(Console.ReadLine());
 
-                // determine start and end date
+                 // determine start and end date
                 DateTime today = DateTime.Now;
                 // we want full weeks sunday - saturday
                 DateTime dataEndDate = today.AddDays(-(int)today.DayOfWeek);
                 // subtract # of weeks from endDate to get startDate
                 DateTime dataDate = dataEndDate.AddDays(-(weeks * 7));
-
+                
                 // random number generator
                 Random rnd = new Random();
 
@@ -46,6 +50,8 @@ namespace SleepData
             }
             else if (resp == "2")
             {
+                // TODO: parse data file
+
             }
         }
     }
